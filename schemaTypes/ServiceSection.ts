@@ -42,6 +42,11 @@ export const ServiceSection = defineType({
               rows: 4,
             }),
             defineField({
+              title: 'Photo',
+              name: 'photo',
+              type: 'image',
+            }),
+            defineField({
               title: 'Service Items',
               name: 'items',
               type: 'array',
