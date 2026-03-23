@@ -24,7 +24,7 @@ export const HeroSection = defineType({
     }),
     defineField({
       title: 'Midline',
-      name: 'midelineText',
+      name: 'midlineText',
       type: 'text',
       rows: 6,
       validation: (rule) => rule.required(),
