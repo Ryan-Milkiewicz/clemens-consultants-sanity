@@ -18,10 +18,38 @@ export const IndustrySection = defineType({
       rows: 3,
     }),
     defineField({
-      title: 'Service Items',
-      name: 'items',
+      title: 'Industry Sections',
+      name: 'sections',
       type: 'array',
-      of: [{type: 'string'}],
+      of: [
+        {
+          type: 'object',
+          title: 'Industry Section',
+          preview: {
+            select: {title: 'title'},
+          },
+          fields: [
+            defineField({
+              title: 'Title',
+              name: 'title',
+              type: 'string',
+              validation: (rule) => rule.required(),
+            }),
+            defineField({
+              title: 'Description',
+              name: 'description',
+              type: 'text',
+              rows: 4,
+              validation: (rule) => rule.required(),
+            }),
+            defineField({
+              title: 'Photo',
+              name: 'photo',
+              type: 'string',
+            }),
+          ],
+        },
+      ],
     }),
   ],
 })

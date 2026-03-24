@@ -63,41 +63,6 @@ export const ServiceSection = defineType({
               type: 'text',
               rows: 3,
             }),
-            // // Optional sub-sections (e.g. for Audit & Assurance)
-            // defineField({
-            //   title: 'Sub Sections',
-            //   name: 'subSections',
-            //   type: 'array',
-            //   of: [
-            //     {
-            //       type: 'object',
-            //       title: 'Sub Section',
-            //       preview: {
-            //         select: {title: 'title'},
-            //       },
-            //       fields: [
-            //         defineField({
-            //           title: 'Title',
-            //           name: 'title',
-            //           type: 'string',
-            //           validation: (rule) => rule.required(),
-            //         }),
-            //         defineField({
-            //           title: 'Description',
-            //           name: 'description',
-            //           type: 'text',
-            //           rows: 4,
-            //         }),
-            //         defineField({
-            //           title: 'Service Items',
-            //           name: 'items',
-            //           type: 'array',
-            //           of: [{type: 'string'}],
-            //         }),
-            //       ],
-            //     },
-            //   ],
-            // }),
           ],
         },
       ],
