@@ -18,6 +18,11 @@ export const OurFirmPage = defineType({
       rows: 4,
     }),
     defineField({
+      title: 'Image',
+      name: 'image',
+      type: 'image',
+    }),
+    defineField({
       title: 'Services List',
       name: 'servicesList',
       type: 'array',
