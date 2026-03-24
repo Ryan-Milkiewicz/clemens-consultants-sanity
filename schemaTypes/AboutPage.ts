@@ -17,5 +17,10 @@ export const AboutPage = defineType({
       type: 'text',
       rows: 4,
     }),
+    defineField({
+      title: 'Image',
+      name: 'image',
+      type: 'image',
+    }),
   ],
 })
